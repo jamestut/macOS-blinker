@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E05D412951C9AD00465BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E05D402951C9AD00465BBB /* AppDelegate.swift */; };
 		00E05D432951C9AE00465BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E05D422951C9AE00465BBB /* Assets.xcassets */; };
-		00E05D462951C9AE00465BBB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E05D442951C9AE00465BBB /* MainMenu.xib */; };
+		00E05D5029531BF800465BBB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E05D4F29531BF800465BBB /* main.swift */; };
+		00E05D5229531C7800465BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E05D5129531C7800465BBB /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00E05D3D2951C9AD00465BBB /* Blinker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		00E05D402951C9AD00465BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00E05D422951C9AE00465BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00E05D452951C9AE00465BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		00E05D472951C9AE00465BBB /* Blinker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blinker.entitlements; sourceTree = "<group>"; };
+		00E05D4F29531BF800465BBB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		00E05D5129531C7800465BBB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +50,10 @@
 		00E05D3F2951C9AD00465BBB /* Blinker */ = {
 			isa = PBXGroup;
 			children = (
-				00E05D402951C9AD00465BBB /* AppDelegate.swift */,
+				00E05D5129531C7800465BBB /* AppDelegate.swift */,
 				00E05D422951C9AE00465BBB /* Assets.xcassets */,
-				00E05D442951C9AE00465BBB /* MainMenu.xib */,
 				00E05D472951C9AE00465BBB /* Blinker.entitlements */,
+				00E05D4F29531BF800465BBB /* main.swift */,
 			);
 			path = Blinker;
 			sourceTree = "<group>";
@@ -117,7 +117,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E05D432951C9AE00465BBB /* Assets.xcassets in Resources */,
-				00E05D462951C9AE00465BBB /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,22 +127,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E05D412951C9AD00465BBB /* AppDelegate.swift in Sources */,
+				00E05D5229531C7800465BBB /* AppDelegate.swift in Sources */,
+				00E05D5029531BF800465BBB /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		00E05D442951C9AE00465BBB /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00E05D452951C9AE00465BBB /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E05D482951C9AE00465BBB /* Debug */ = {
@@ -271,8 +260,9 @@
 				DEVELOPMENT_TEAM = W997CMJ3MG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,8 +288,9 @@
 				DEVELOPMENT_TEAM = W997CMJ3MG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
