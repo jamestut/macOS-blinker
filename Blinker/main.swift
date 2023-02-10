@@ -1,8 +1,5 @@
-//
-//  main.swift
-//  Blinker
-//
-//  Created by jamesn on 21/12/2022.
-//
+import Cocoa
+let delegate = AppDelegate()
+NSApplication.shared.delegate = delegate
+_ = NSApplicationMain(CommandLine.argc, CommandLine.unsafeArgv)
 
-import Foundation
